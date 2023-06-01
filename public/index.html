@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Корисні посилання для програмістів</title>
+  <style>
+    body {
+    background-image: url("./images/holovnyi.png");
+    background-size: 100%;
+    background-repeat: no-repeat;       
+}
+
+    .section {
+    display: none;
+    text-align: center;
+}
+
+    .active {
+    display: block;
+} 
+
+   .button-link-container {  
+   position: absolute;
+   text-align: left;
+   left: 90px;
+   top: 205px;
+   padding: 30px;
+  }
+
+  .button-link-container button {
+      display: block;
+      margin-bottom: 10px;
+      width: 180px;
+      height: 37px; 
+    }
+
+.about-site-container {
+ color: black;
+ text-align: right;
+ text-decoration: white;
+ margin-top: 557px;
+ display: inline-block;
+ font-size: 21px;
+ margin-left: 264px;
+ cursor: pointer;
+ max-width: 22%;
+}
+
+.about-site-container:active {
+  color: blue;
+}
+
+.hidden-text {
+ display: none;
+ color:white;
+ max-width: 15%;
+ margin-top: -450px;
+ text-align: center;
+ margin-left: 350px;
+ font-size: 18px;
+}
+  </style>
+  <script>
+    function openUsefulSites() {
+    window.location.href = "useful_sites.html";
+  }
+  
+    function openProgrammingLanguagesPage() {
+    window.location.href = "programming_languages.html";
+  }
+
+   function openBlogs() {
+    window.location.href = "blogs.html";
+  }
+  
+  function openDataBase() {
+    window.location.href = "database.html";
+  }
+
+  function openDeveloperContacts() {
+    window.location.href = "developer_contacts.html"
+  }
+
+  function showText() {
+    var hiddenText = document.getElementById('hidden-text');
+    hiddenText.style.display = 'block';
+  }
+  </script>
+</head>
+<body>
+
+  <div class="button-link-container">
+    <button onclick="openUsefulSites()">Useful sites</button>
+    <button onclick="openProgrammingLanguagesPage()">Programming languages</button>
+    <button onclick="openBlogs()">Blogs</button>
+    <button onclick="openDataBase()">Database</button>
+    <button onclick="openDeveloperContacts()">Developer contacts</button>
+  </div>
+  
+  <button class="about-site-container" onclick="showText()">About site</button>
+  <p id="hidden-text" class="hidden-text">Ласкаво прошу на інформаційний сайт для програмістів!
+    На цьому сайті ви знайдете багато цікавої та корисної інформації для програмістів різних рівнів.
+    Ви зможете ознайомитися з різними мовами програмування, кращими практиками розробки, алгоритмами, веб-розробкою, базами даних та багато іншого. Також тут надається посилання на корисні ресурси, де ви зможете поглибити свої знання та навички. &#128536;</p> 
+</body>
+</html>
+
+
